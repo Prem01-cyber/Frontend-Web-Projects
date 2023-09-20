@@ -17,29 +17,43 @@
     <div class="form-container">
       <!-- Sidebar start -->
       <div class="form-sidebar">
-        <div class="step active">
-          <!-- Steps 1 -->
+        <!-- Steps 1 Active -->
+        <div class="stp active">
           <div class="step-number">1</div>
-          <div class="step-content">Step 1</div>
-          <div class="step-title">Your info</div>
-          <!-- Step 2 -->
+          <div class="step-content">
+            <span>Step 1</span>
+            <b>Your info</b>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="stp">
           <div class="step-number">2</div>
-          <div class="step-content">Step 2</div>
-          <div class="step-title">Select plan</div>
-          <!-- Step 3 -->
+          <div class="step-content">
+            <span>Step 2</span>
+            <b>Select Plan</b>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="stp">
           <div class="step-number">3</div>
-          <div class="step-content">Step 3</div>
-          <div class="step-title">Add-ons</div>
-          <!-- Step 4 -->
+          <div class="step-content">
+            <span>Step 3</span>
+            <b>Add-ons</b>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="stp">
           <div class="step-number">4</div>
-          <div class="step-content">Step 4</div>
-          <div class="step-title">Summary</div>
+          <div class="step-content">
+            <span>Step 4</span>
+            <b>Checkout</b>
+          </div>
         </div>
       </div>
       <!-- Sidebar end -->
       <!-- Step 1 Start -->
       <div class="step step-1">
-        <div class="step-title">Personal info</div>
+        <div class="step-title"><h1>Personal info</h1></div>
         <div class="step-description">
           <p class="exp">Please provide your name, email address, and phone number.</p>
         </div>        
@@ -47,7 +61,7 @@
           <!-- Name -->
           <div class="step-form-group">
             <label for="name">Name</label>
-            <!-- <p class="error">This field is required</p> -->
+            <p class="error">This field is required</p>
             <input type="text" required id="name" placeholder="e.g. Stephen King">
           </div>
           <!-- Email -->
@@ -189,10 +203,9 @@
               <p class="plan-name">Arcade (Monthly)</p>
               <p class="plan-price">$9/mo</p>
             </div>
-
-            <hr>
-            
+            <hr>            
             <div class="addons">
+              <!-- Dynamic content here -->
               <template>
                 <div class="selected-addons">
                   <span class="service-name">Online service</span>
