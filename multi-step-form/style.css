@@ -398,6 +398,17 @@ input:checked + .slider::before {
     align-items: center;
 }
 
+.step5-header {
+    color: var(--Marine-blue);
+    margin-bottom: 1rem;
+}
+
+.step5-exp {
+    color: var(--Cool-gray);
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
 /* Buttons */
 .step-btns {
     display: flex;
