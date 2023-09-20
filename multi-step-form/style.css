@@ -116,18 +116,6 @@ body {
     color: var(--Cool-gray);
 }
 
-.btn-next {
-    border:none;
-    background-color: var(--Marine-blue);
-    color: var(--White);
-    padding: 1rem 2rem;
-    border-radius: 7px;
-    cursor: pointer;
-    margin-top: auto;
-    margin-left: auto;
-    margin-bottom: 2rem;
-}
-
 /* Step 1 */
 .step-1 {
     display: none;
@@ -226,23 +214,7 @@ form .error {
     color: var(--Marine-blue);
 }
 
-.step-btns {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} 
 
-.btn-prev {
-    margin-top: auto;
-    border:none;
-    background-color: transparent;
-    padding: 1rem 2rem;
-    border-radius: 7px;
-    cursor: pointer;
-    color: var(--Cool-gray);
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
 
 /* Step 2 Card on Chosen */
 .selected {
@@ -366,7 +338,7 @@ input:checked + .slider::before {
 
 /* Step 4 */
 .step-4 {
-    display: flex;
+    display: none;
     width: 90%;
 }
 
@@ -418,14 +390,44 @@ input:checked + .slider::before {
 
 /* Step 5 */
 .step-5 {
-    display: none;
-    width: 80%;
+    display: flex;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-
 /* Buttons */
+.step-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
 
+.btn-prev {
+    margin-top: auto;
+    border:none;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    color: var(--Cool-gray);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
 
+.btn-next {
+    border:none;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
 
 /* Attribution */
 .attribution { 
