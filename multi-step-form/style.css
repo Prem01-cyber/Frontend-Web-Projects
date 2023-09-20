@@ -170,7 +170,7 @@ form .error {
 
 /* Step 2 */
 .step-2 {
-    display: flex;
+    display: none;
     width: 90%;
 }
 
@@ -314,8 +314,54 @@ input:checked + .slider::before {
 
 /* Step 3 */
 .step-3 {
-    display: none;
+    display: flex;
     width: 80%;
+}
+
+.step-3 form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.step-3 form input {
+    accent-color: var(--Purplish-blue);
+    transform: scale(1.2);
+    user-select: none;
+}
+
+.box {
+    border: 1px solid var(--Cool-gray);
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-left: 12px;
+}
+
+.description label {
+    color: var(--Marine-blue);
+    font-weight: 700;
+    user-select: none;
+}
+
+.description small {
+    color: var(--Cool-gray);
+    font-weight: 700;
+}
+
+.price {
+    margin-left: auto;
+    color: var(--Purplish-blue);
 }
 
 /* Step 4 */
