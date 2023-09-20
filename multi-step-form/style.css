@@ -95,24 +95,106 @@ body {
     color: var(--White);
 }
 
+/* Step 1 Common Step */
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.step .step-header {
+    margin-bottom: auto;
+    padding-top: 2rem;
+    line-height: 2.5rem;
+}
+
+.step-header .title {
+    color: var(--Marine-blue);
+}
+
+.step-header .exp {
+    color: var(--Cool-gray);
+}
+
+.btn-next {
+    border:none;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
 
 /* Step 1 */
+.step-1 {
+    display: flex;
+    width: 90%;
+}
 
+.step-1 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.step-form-group {
+    color: var(--Marine-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-1 form input {
+    padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid var(--Cool-gray);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.step-1 form input:focus {
+    outline-color: var(--Purplish-blue);
+}
+
+form .error {
+    display: none;
+    color: var(--Strawberry-red);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
 
 /* Step 2 */
-
+.step-2 {
+    display: none;
+    width: 90%;
+}
 
 /* Switches */
 
 
 /* Step 3 */
-
+.step-3 {
+    display: none;
+    width: 80%;
+}
 
 /* Step 4 */
+.step-4 {
+    display: none;
+    width: 90%;
+}
 
 
 /* Step 5 */
+.step-5 {
+    display: none;
+    width: 80%;
+}
 
 
 /* Buttons */
