@@ -314,7 +314,7 @@ input:checked + .slider::before {
 
 /* Step 3 */
 .step-3 {
-    display: flex;
+    display: none;
     width: 80%;
 }
 
@@ -366,10 +366,55 @@ input:checked + .slider::before {
 
 /* Step 4 */
 .step-4 {
-    display: none;
+    display: flex;
     width: 90%;
 }
 
+.selection-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.selection-container {
+    background-color: var(--Mangolia);
+    padding: 1.5rem;
+}
+
+.total {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Cool-gray);
+}
+
+.total b {
+    color: var(--Purplish-blue);
+    font-size: 1.2rem;
+}
+
+.selected-plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--Marine-blue);
+    font-weight: 500;
+}
+
+.selected-addons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--Cool-gray);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.selected-addons .service-price {
+    color: var(--Marine-blue);
+}
 
 /* Step 5 */
 .step-5 {
